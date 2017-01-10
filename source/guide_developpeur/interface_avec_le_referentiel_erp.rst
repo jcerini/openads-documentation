@@ -776,6 +776,67 @@ L'objectif principal de cet échange est de permettre aux services ERP d'être i
 
 
 
+.. _echange_ads_erp_114:
+
+========================================================================
+[114](Échange ADS → ERP) Dossier AT Notification de dossier à enjeux ADS
+========================================================================
+
+L'objectif principal de cet échange est de permettre aux services ADS de partager le caractère 'à enjeu' du dossier pour en informer le service ERP.
+
+
+*Identifiant* : ADS_ERP__AT__ENJEU_ADS
+
+
+*Cas d'utilisation* :
+
+• Un instructeur peut qualifier le dossier comme Dossier à enjeux. Dans ce cas, un message « Dossier à enjeux ADS » est envoyé vers l'application ERP afin de mettre à jour le Dossier d'Instruction. La mise à jour est effectuée automatiquement et un message est présentés au service ERP qui est chargé de mettre à jour le dossier. 
+
+*Déclencheur* :
+
+• L'option ERP est activée
+• Le formulaire de modification de dossier dossier d'instruction avec a enjeu ERP qui change de statut(dossier::triggermodifierapres())
+• Le dossier est de type AT (paramètre 'erp__dossier_nature__at')
+• Le dossier est marqué comme « connecté au référentiel ERP »
+
+
+*Traitement* :
+
+• Création de message : Un message de catégorie "sortant" est ajouté dans openADS afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction. → Marqueur(s) de lecture du message : message marqué comme lu par défaut.
+• Envoi de la requête à destination de la ressource 'messages' d'openARIA. :ref:`Configuration des échanges sortants<configuration_echanges_sortants_referentiel_erp>`.
+
+
+
+*Contenu de l'échange* :
+
+- **type** : Type de message
+- **date** : Date/heure d’envoi du message
+- **emetteur** : Émetteur du message (Nom/Prénom/Login de l’utilisateur à l’origine du message)
+- **dossier_instruction** : Identifiant du dossier d’instruction
+- **contenu** :
+
+  • Dossier à enjeux ADS : Oui / Non
+
+
+*Exemple* :
+
+.. sourcecode:: http
+      
+    POST /openads/services/rest_entry.php/messages HTTP/1.1
+    Host: localhost
+
+    {
+        "type": "ADS_ERP__AT__ENJEU_ADS",
+        "date": "10/01/2017 12:52",
+        "emetteur": "John Doe",
+        "dossier_instruction": "AT0130551600001P0",
+        "contenu": {
+             "Dossier à enjeu ADS": "oui"
+        }
+    }
+
+
+
 .. _echange_erp_ads_201:
 
 =========================================================================================
