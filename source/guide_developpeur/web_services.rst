@@ -581,6 +581,7 @@ Cette ressource permet d'interfacer un message.
    - :ref:`echange_erp_ads_205` 
    - :ref:`echange_erp_ads_206` 
    - :ref:`echange_erp_ads_207` 
+   - :ref:`echange_erp_ads_213` 
 
    **Exemples de requête** :
 
@@ -647,6 +648,22 @@ Cette ressource permet d'interfacer un message.
         "contenu": {
           "Dossier à enjeux ERP" : "oui"
         }
+      }
+
+   .. sourcecode:: http
+
+      POST /openads/services/rest_entry.php/messages HTTP/1.1
+      Host: localhost
+
+      {
+          "type": "ERP_ADS__PC__AR_CONSULTATION_OFFICIELLE",
+          "date": "16/06/2014 14:12",
+          "emetteur": "John Doe",
+          "dossier_instruction": "PD12R0001",
+          "contenu": {
+              "consultation" : 2,
+              "date_reception": "16/06/2014 14:11"
+          }
       }
 
 

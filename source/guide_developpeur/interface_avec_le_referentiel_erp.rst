@@ -1397,3 +1397,55 @@ Le service ERP a besoin de consulter les informations contenues dans le Dossier 
     Host: localhost
 
 
+.. _echange_erp_ads_213:
+
+==================================================================================
+[213](Échange ERP → ADS) Dossier PC Accusé de reception de consultation officielle
+==================================================================================
+
+L'objectif principal de cet échange est de notifier les instructeurs d'un dossier d'instruction du référentiel ADS que le dossier concerné va recevoir une consultation officielle pour avis ou pour conformité et leur permettre donc d'avoir une lettre type qui accuse la réception.
+
+*Identifiant* : ERP_ADS__PC__AR_CONSULTATION_OFFICIELLE
+
+
+*Cas d'utilisation* :
+
+• Cette information est envoyée par le référentiel ERP au référentiel ADS suite à la notification de consultation officielle d'un dossier PC.
+
+*Déclencheur* :
+
+• Appel d'une méthode de maintenance par cron
+• Le dossier est marqué comme « connecté au référentiel ADS »
+• Un message de type :ref:`echange_ads_erp_104` ou :ref:`echange_ads_erp_106` a été reçu sur le dossier
+
+
+*Traitement* :
+
+• Création de message : Un message de catégorie "sortant" est ajouté dans openARIA afin de consigner l'échange. Il est visible depuis l'onglet "Message(s)" du dossier d'instruction et du dossier de coordination. → Marqueur(s) de lecture du message : mode 0.
+• Envoi de la requête à destination de la ressource 'message' d'openADS. :ref:`Configuration des échanges sortants<configuration_echanges_sortants_referentiel_ads>`
+
+
+*Contenu de l'échange* :
+
+• « consultation » : l'identifiant de la consultation
+• « date_reception » : Date de la reception de la consultation au format JJ/MM/AAAA
+
+
+*Exemple* :
+
+.. sourcecode:: http
+
+    POST /openads/services/rest_entry.php/messages HTTP/1.1
+    Host: localhost
+
+    {
+        "type": "ERP_ADS__PC__AR_CONSULTATION_OFFICIELLE",
+        "date": "16/06/2014 14:12",
+        "emetteur": "John Doe",
+        "dossier_instruction": "PD12R0001",
+        "contenu": {
+            "consultation" : 2,
+            "date_reception": "16/06/2014 14:11"
+        }
+    }
+
