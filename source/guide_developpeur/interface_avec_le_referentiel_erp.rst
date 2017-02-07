@@ -779,7 +779,7 @@ L'objectif principal de cet échange est de permettre aux services ERP d'être i
 .. _echange_ads_erp_114:
 
 ========================================================================
-[114](Échange ADS → ERP) Dossier PC Notification de dossier à enjeux ADS
+[114](Échange ADS → ERP) Dossier PC Notification de dossier à enjeu ADS
 ========================================================================
 
 L'objectif principal de cet échange est de permettre aux services ADS de partager le caractère 'à enjeu' du dossier pour en informer le service ERP.
@@ -790,12 +790,12 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 
 *Cas d'utilisation* :
 
-• Un instructeur peut qualifier le dossier comme Dossier à enjeux. Dans ce cas, un message « Dossier à enjeux ADS » est envoyé vers l'application ERP afin de mettre à jour le Dossier d'Instruction. La mise à jour est effectuée automatiquement et un message est présentés au service ERP qui est chargé de mettre à jour le dossier. 
+• Un instructeur peut qualifier le dossier comme dossier à enjeu. Dans ce cas, un message « Dossier à enjeu ADS » est envoyé vers l'application ERP afin de mettre à jour le dossier de coordination. La mise à jour est effectuée automatiquement et un message est présenté au service ERP qui est chargé de mettre à jour le dossier. 
 
 *Déclencheur* :
 
 • L'option ERP est activée
-• Le formulaire de modification de dossier dossier d'instruction avec a enjeu ERP qui change de statut(dossier::triggermodifierapres())
+• Le formulaire de modification de dossier dossier d'instruction avec a enjeu ERP qui change de statut (dossier::triggermodifierapres())
 • Le dossier est de type PC (paramètre 'erp__dossier_nature__pc')
 • Le dossier est marqué comme « connecté au référentiel ERP »
 
@@ -815,7 +815,7 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 - **dossier_instruction** : Identifiant du dossier d’instruction
 - **contenu** :
 
-  • Dossier à enjeux ADS : Oui / Non
+  - **Dossier à enjeu ADS** : Oui / Non
 
 
 *Exemple* :
@@ -828,8 +828,8 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
     {
         "type": "ADS_ERP__PC__ENJEU_ADS",
         "date": "10/01/2017 12:52",
-        "emetteur": "John Doe",
-        "dossier_instruction": "AT0130551600001P0",
+        "emetteur": "admin",
+        "dossier_instruction": "PC0130551601234P0",
         "contenu": {
              "Dossier à enjeu ADS": "oui"
         }
