@@ -797,7 +797,7 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 • L'option ERP est activée
 • Le dossier est de type PC (paramètre 'erp__dossier_nature__pc')
 • Le dossier est marqué comme « connecté au référentiel ERP »
-• Le formulaire de modification de dossier dossier d'instruction avec « enjeu urbanisme » qui change de statut OU le marqueur « à qualifier » à « NON » ET le marqueur « ERP » à « OUI » ET « enjeu urbanisme » à « OUI » (dossier::triggermodifierapres())
+• Le formulaire de modification de dossier dossier d'instruction avec « enjeu urbanisme » qui change de statut OU le marqueur « à qualifier » qui passe de « OUI » à « NON » ET « enjeu urbanisme » à « OUI » (dossier::triggermodifierapres())
 
 *Traitement* :
 
