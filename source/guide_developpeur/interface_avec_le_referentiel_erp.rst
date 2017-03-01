@@ -797,7 +797,7 @@ L'objectif principal de cet échange est de permettre aux services ADS de partag
 • L'option ERP est activée
 • Le dossier est de type PC (paramètre 'erp__dossier_nature__pc')
 • Le dossier est marqué comme « connecté au référentiel ERP »
-• Le formulaire de modification de dossier dossier d'instruction avec « enjeu urbanisme » qui change de statut OU le marqueur « à qualifier » qui passe de « OUI » à « NON » ET « enjeu urbanisme » à « OUI » (dossier::triggermodifierapres())
+• Lors de la modification d'un dossier connecté au référentiel ERP l'enjeu urbanisme de change de statut
 
 *Traitement* :
 
@@ -1402,7 +1402,7 @@ Le service ERP a besoin de consulter les informations contenues dans le Dossier 
 [213](Échange ERP → ADS) Dossier PC Accusé de reception de consultation officielle
 ==================================================================================
 
-L'objectif principal de cet échange est de notifier les instructeurs d'un dossier d'instruction du référentiel ADS que le dossier concerné va recevoir une consultation officielle pour avis ou pour conformité et leur permettre donc d'avoir une lettre type qui accuse la réception.
+L'objectif principal de cet échange est d'avoir un accusé de réception de consultation dans le référentiel ADS.
 
 *Identifiant* : ERP_ADS__PC__AR_CONSULTATION_OFFICIELLE
 
@@ -1444,7 +1444,6 @@ L'objectif principal de cet échange est de notifier les instructeurs d'un dossi
         "dossier_instruction": "PD12R0001",
         "contenu": {
             "consultation" : 2,
-            "date_reception": "16/06/2014 14:11"
         }
     }
 
