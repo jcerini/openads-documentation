@@ -236,6 +236,19 @@ Un lien sur chaque enregistrement permet d'accéder à la fiche de visualisation
 Un lien "Voir tous les dossiers évènement incomplet ou majoration sans RAR" permet d'accéder au listing des mêmes dossiers sans limite de nombre.
 
 
+.. _widget_dossier_contentieux_nouveau_dossier:
+
+Widget "Nouvelle demande 'nouveau dossier contentieux'"
+-------------------------------------------
+
+.. image:: widget_dossier_contentieux_nouveau_dossier.png
+
+Orienté Contentieux.
+
+Raccourci permet d'accéder directement au formulaire de saisie d'une nouvelle demande dans le cadre du dépôt d'un nouveau dossier contentieux.
+
+
+
 .. _widget_dossier_contentieux_recours:
 
 Widget "Recours"
