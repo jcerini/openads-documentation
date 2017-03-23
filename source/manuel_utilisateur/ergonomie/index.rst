@@ -239,7 +239,7 @@ Un lien "Voir tous les dossiers évènement incomplet ou majoration sans RAR" pe
 .. _widget_dossier_contentieux_nouveau_dossier:
 
 Widget "Nouvelle demande 'nouveau dossier contentieux'"
--------------------------------------------
+-------------------------------------------------------
 
 .. image:: widget_dossier_contentieux_nouveau_dossier.png
 
