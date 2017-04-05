@@ -57,6 +57,19 @@ Tous les montants sont calculés automatiquement à la validation des données t
 Actions
 =======
 
+.. _instruction_action_modifier_date:
+
+Modifier la date de dépôt
+=========================
+
+Dans le contexte de la modification d'un dossier d'instruction on peut modifier la date de dépôt.
+
+.. image:: instruction_action_modifier_date.png
+
+* Disponible s'il n'y a qu'un événement d'instruction sur le dossier et qu'il s'agit du récépissé de la demande.
+* La modification s'éffectue uniquement si l'année reste inchangée.
+
+
 Régénérer le récépissé
 ======================
 * Disponible si l'utilisateur a un droit spécifique, s'il n'y a qu'un événement d'instruction sur le dossier et qu'il s'agit du récépissé de la demande.
