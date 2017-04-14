@@ -213,10 +213,11 @@ Trois arguments facultatifs sont paramétrables :
 messages_retours
 ================
 
-Ce widget permet d'afficher le nombre de retours de consultation marqués comme 'non lu' pour les dossiers de l'utilisateur correspondant au filtre paramétrable. Un lien *Voir +* permet d'accéder au listing complet. Les informations fonctionnelles sont disponibles :ref:`ici<widget_messages_retours>`.
+Ce widget permet d'afficher le nombre de messages en attente de lecture pour les dossiers de l'utilisateur correspondant au filtre paramétrable. Un lien *Voir +* permet d'accéder au listing complet. Les informations fonctionnelles sont disponibles :ref:`ici<widget_messages_retours>`.
 
-Un argument facultatif est paramétrable :
+Deux arguments facultatifs sont paramétrables :
 
+* **contexte** [par défaut *standard*] - les contextes disponibles sont *standard* et *contentieux*
 * **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *division* et *instructeur*
 
 
@@ -230,6 +231,127 @@ Ce widget présente les dossiers les plus récents (10 max.) sur lesquels ont é
 Un argument facultatif est paramétrable :
 
 * **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *division* et *instructeur*
+
+
+.. _administration_widget_nouvelle_demande_nouveau_dossier:
+
+nouvelle_demande_nouveau_dossier
+================================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_nouvelle_demande_nouveau_dossier>`.
+
+Un argument facultatif est paramétrable :
+
+* **contexte** [par défaut *standard*] - les contextes disponibles sont *standard* et *contentieux*.
+
+
+.. _administration_widget_dossier_contentieux_recours:
+
+dossier_contentieux_recours
+===========================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_recours>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun* et *instructeur*.
+
+
+.. _administration_widget_dossier_contentieux_infraction:
+
+dossier_contentieux_infraction
+==============================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_infraction>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun* et *instructeur*.
+
+
+.. _administration_widget_dossier_contentieux_contradictoire:
+
+dossier_contentieux_contradictoire
+==================================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_contradictoire>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *instructeur* et *division*.
+
+
+.. _administration_widget_dossier_contentieux_ait:
+
+dossier_contentieux_ait
+=======================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_ait>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *instructeur* et *division*.
+
+
+.. _administration_widget_dossier_contentieux_audience:
+
+dossier_contentieux_audience
+============================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_audience>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *instructeur* et *division*.
+
+
+.. _administration_widget_dossier_contentieux_clotures:
+
+dossier_contentieux_clotures
+============================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_clotures>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *instructeur* et *division*.
+
+
+.. _administration_widget_dossier_contentieux_inaffectes:
+
+dossier_contentieux_inaffectes
+==============================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_inaffectes>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *aucun*] - les filtres disponibles sont *aucun* et *division*.
+
+
+.. _administration_widget_dossier_contentieux_alerte_visite:
+
+dossier_contentieux_alerte_visite
+=================================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_alerte_visite>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *instructeur* et *division*.
+
+
+.. _administration_widget_dossier_contentieux_alerte_parquet:
+
+dossier_contentieux_alerte_parquet
+==================================
+
+Les informations fonctionnelles sont disponibles :ref:`ici<widget_dossier_contentieux_alerte_parquet>`.
+
+Un argument facultatif est paramétrable :
+
+* **filtre** [par défaut *instructeur*] - les filtres disponibles sont *aucun*, *instructeur* et *division*.
+
 
 .. _administration_composition:
 

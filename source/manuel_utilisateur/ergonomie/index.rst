@@ -128,12 +128,12 @@ Le menu d'openADS propose autant de listings que de filtres possibles : ainsi le
 
 .. _widget_messages_retours:
 
-Widget "Retours de Messages"
-----------------------------
+Widget "Mes messages"
+---------------------
 
 .. image:: widget_messages_retours.png
 
-Orienté Instruction.
+Orienté Instruction/Contentieux.
 
 Ce widget permet d'indiquer le nombre de messages en attente de lecture ('non lu') à l'utilisateur connecté.
 Pour plus de détails sur les messages, se référer :ref:`ici <instruction_dossier_message>`.
@@ -160,7 +160,12 @@ Widget "Nouvelle demande 'nouveau dossier'"
 
 Orienté Guichet.
 
-Raccourci permet d'accéder directement au formulaire de saisie d'une nouvelle demande dans le cadre du dépôt d'un nouveau dossier.
+Ce widget permet d'accéder directement au formulaire de saisie d'une nouvelle demande dans le cadre du dépôt d'un nouveau dossier.
+
+Deux contextes sont disponibles sur ce widget (le contexte est :ref:`paramétrable <administration_widget_nouvelle_demande_nouveau_dossier>` par l'administrateur) :
+
+- contexte *standard* : permet de rediriger vers le formulaire de nouvelle demande du menu "Guichet Unique" ;
+- contexte *contentieux* : permet de rediriger vers le formulaire de nouvelle demande du menu "Contentieux".
 
 
 .. _widget_nouvelle_demande_autre_dossier:
@@ -260,7 +265,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq recours les plus récents.
 
-Deux filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Deux filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_recours>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - aucun filtre : tous les dossiers auxquels l'utilisateurs a accès (si l'utilisateur appartient à une commune niveau mono, alors l'utilisateur n'a accès qu'aux dossiers de sa commune et si l'utilisateur appartient à une commune multi, alors l'utilisateur a accès à tous les dossiers).
@@ -288,7 +293,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq infractions les plus récentes.
 
-Deux filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Deux filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_infraction>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - aucun filtre : tous les dossiers auxquels l'utilisateurs a accès (si l'utilisateur appartient à une commune niveau mono, alors l'utilisateur n'a accès qu'aux dossiers de sa commune et si l'utilisateur appartient à une commune multi, alors l'utilisateur a accès à tous les dossiers).
@@ -316,7 +321,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq infractions les plus anciennes pour lesquelles la date de contradictoire est saisie (soit elle est supérieure ou égale à la date du jour + 3 semaines, soit elle ne rentre pas dans cette condition et la date de retour du contradictoire est vide), il n'y a pas d'événements de type 'Annlation de contradictoire' et il n'y a pas d'AIT créé.
 
-Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_contradictoire>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - filtre par division : on présente tous les dossiers de la division de l'instructeur.
@@ -346,7 +351,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq infractions les plus récentes pour lesquelles il y a un AIT signé.
 
-Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_ait>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - filtre par division : on présente tous les dossiers de la division de l'instructeur.
@@ -376,7 +381,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq infractions les plus récentes pour lesquelles une date d'audience existe et est comprise entre le jour courant et un mois dans le futur.
 
-Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_audience>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - filtre par division : on présente tous les dossiers de la division de l'instructeur.
@@ -405,7 +410,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq recours les plus récents pour lesquels une date de clôture d'instruction existe et est comprise entre le jour courant et un mois dans le futur.
 
-Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_clotures>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - filtre par division : on présente tous les dossiers de la division de l'instructeur.
@@ -434,7 +439,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq infractions les plus anciennes non-affectées à un technicien.
 
-Deux filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Deux filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_inaffectes>` par l'administrateur) :
 
 - filtre par division : on présente tous les dossiers de la division de l'instructeur.
 - aucun filtre : tous les dossiers auxquels l'utilisateurs a accès (si l'utilisateur appartient à une commune niveau mono, alors l'utilisateur n'a accès qu'aux dossiers de sa commune et si l'utilisateur appartient à une commune multi, alors l'utilisateur a accès à tous les dossiers).
@@ -462,7 +467,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq infractions les plus anciennes pour lesquelles la date de réception est dépassée depuis plus de 3 mois et dont la date de première visite n'est pas saisie.
 
-Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_alerte_visite>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - filtre par division : on présente tous les dossiers de la division de l'instructeur.
@@ -491,7 +496,7 @@ Orienté Contentieux.
 
 L'objet de ce widget est de présenter les cinq infractions les plus anciennes pour lesquelles la date de réception est dépassée depuis plus de 9 mois et dont la date de transmission au parquet n'est pas saisie.
 
-Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossiers_evenement_incomplet_majoration>` par l'administrateur) :
+Trois filtres sont disponibles sur ce widget (le filtre est :ref:`paramétrable <administration_widget_dossier_contentieux_alerte_parquet>` par l'administrateur) :
 
 - filtre par instructeur : on présente uniquement les dossiers dont il est spécifiquement instructeur.
 - filtre par division : on présente tous les dossiers de la division de l'instructeur.

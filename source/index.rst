@@ -51,6 +51,7 @@ Contributeurs
 * `atReal <http://www.atreal.fr>`_
 * Thierry Benita
 * Matthias Broquet
+* Jérémy Cerini
 * Nicolas Haye
 * Jean-Yves Madier
 * Nicolas Meucci
